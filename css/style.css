@@ -1,0 +1,152 @@
+/* CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* General styles
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    /*Typography Declarations*/
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.masthead-heading,
+.masthead-intro,
+.content-footer {
+    text-align: center;
+}
+
+.introduction-section > p,
+.location-section > p,
+.content-footer >p {
+    /*Typography Declarations*/
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+
+/* Header styles
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.masthead {
+    padding: 6em 0;
+    background-image: url("https://images.unsplash.com/photo-1443397646383-16272048780e?crop=entropy&dpr=2&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1225");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    border-top: 1em solid purple;
+    margin-top: 0;
+}
+
+section > h1 {
+    margin-top: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+section h3 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.masthead-intro {
+    /*Layout Declarations*/
+    margin-bottom: .1em;
+    /*Typography Declarations*/
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    /*Layout Declarations*/
+    margin-top: -0.2em;
+    /*Typography Declarations*/
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+
+/* Content styles
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* Footer styles
+(all the styles inside the < footer > tag)
+*/
+
+.content-footer {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+.social > li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+
+/* Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
+
+@media screen and (max-width: 500px) {
+    .masthead {
+        padding: 3rem 0;
+    }
+    .masthead-heading {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content-footer {
+        padding: 1rem 0;
+    }
+    .social >li {
+        font-size: 1rem;
+    }
+}
